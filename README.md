@@ -1,6 +1,6 @@
 
 
-Machine Learning can be time consuming to learn fully from scratch. But if want to build some proejects on ML without having to learn it into deep, you can use [ml5.js](https://ml5js.org/) library which is build on top of tensorflow.js library. ml5.js makes it easier to write and understand the code. It also has some great features like creating our own model, training it, using pre build model, etc. all in browser. 
+Machine Learning can be time consuming to learn fully from scratch. But if you want to build some proejects on ML without having to learn it into deep, you can use [ml5.js](https://ml5js.org/) library which is build on top of tensorflow.js library. ml5.js makes it easier to write and understand the code. It also has some great features like creating our own model, training it, using pre build model, etc. all in browser. 
 
 >**Note**: These projects are part of a course that is available on [freeCodeCamp](https://www.freecodecamp.org/news/learn-ml5js-for-machine-learning-in-javascript/) 
 

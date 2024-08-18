@@ -1,0 +1,91 @@
+/* style.css */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1c1e24;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #2b2d36;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #f25f4c;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-display {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #f25f4c;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .file-input {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .message {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .file-input {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+}

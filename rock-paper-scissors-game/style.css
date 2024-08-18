@@ -1,0 +1,167 @@
+/* style.css */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1c1e24;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.scoreboard {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #2b2d36;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.score span:first-child {
+  font-size: 1rem;
+  color: #888;
+}
+
+.score span:last-child {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.separator {
+  font-size: 2rem;
+  color: #888;
+  margin: 0 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #f25f4c;
+  margin-bottom: 20px;
+}
+
+.content {
+  background-color: #2b2d36;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video-container {
+  margin-bottom: 20px;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+  border: 5px solid #f25f4c;
+  border-radius: 10px;
+}
+
+.gesture,
+.game-result {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.start-button {
+  background-color: #f25f4c;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.start-button:hover {
+  background-color: #ff7f6e;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .gesture,
+  .game-result {
+    font-size: 1rem;
+  }
+
+  .start-button {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .scoreboard {
+    padding: 8px 15px;
+  }
+
+  .score span:last-child {
+    font-size: 1.5rem;
+  }
+
+  .separator {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .gesture,
+  .game-result {
+    font-size: 0.9rem;
+  }
+
+  .start-button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+
+  .scoreboard {
+    padding: 6px 10px;
+  }
+
+  .score span:last-child {
+    font-size: 1.2rem;
+  }
+
+  .separator {
+    font-size: 1.2rem;
+  }
+}

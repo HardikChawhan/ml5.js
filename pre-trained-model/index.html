@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pretrained model | ml5.js</title>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Pretrained model</h1>
+    <div class="content">
+      <input type="file" id="fileInput" class="file-input" />
+      <img id="mainImg" class="image-display" />
+      <p id="message" class="message">loading ...</p>
+    </div>
+  </div>
+  <script>
+    let fileInput = document.getElementById("fileInput");
+    let mainImg = document.getElementById("mainImg");
+    let message = document.getElementById("message");
+
+    let Classifier = ml5.imageClassifier('MobileNet', loadModel);
+
+    function loadImgFile(event) {
+      let imgFile = event.target.files[0];
+      let imgUrl = URL.createObjectURL(imgFile);
+      mainImg.src = imgUrl;
+    }
+
+    function classifyImg() {
+      Classifier.classify(mainImg, (result) => {
+        message.innerText = result[0].label;
+      })
+    }
+
+    function loadModel() {
+      message.innerHTML = "Please load a file";
+    }
+
+    fileInput.addEventListener("change", loadImgFile);
+    mainImg.addEventListener("load", classifyImg);
+  </script>
+</body>
+
+</html>

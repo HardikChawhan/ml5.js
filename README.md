@@ -1,3 +1,5 @@
+
+
 Machine Learning can be time consuming to learn fully from scratch. But if want to build some proejects on ML without having to learn it into deep, you can use [ml5.js](https://ml5js.org/) library which is build on top of tensorflow.js library. ml5.js makes it easier to write and understand the code. It also has some great features like creating our own model, training it, using pre build model, etc. all in browser. 
 
 >**Note**: These projects are part of a course that is available on [freeCodeCamp](https://www.freecodecamp.org/news/learn-ml5js-for-machine-learning-in-javascript/) 
@@ -97,3 +99,14 @@ In this project, I created a custom neural network using the ml5.js library to p
 - [Teachable Machine](https://teachablemachine.withgoogle.com)
 - [Kaggle Rock Paper Scissors Dataset](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors)
 - The developers and community behind the ml5.js library
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## 🔗 Profile Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hardikchawhan)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ChawhanHardik)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/hardik_chawhan_10/)
+
